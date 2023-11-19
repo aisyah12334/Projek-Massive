@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rg.css" />
+    <title>Buat Akun</title>
+    <link rel="web site icon" href="sign-up.svg" type="png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>Buat Akun</header>
+      <form action="#" autocomplete="off">
+        <div class="field name-field">
+          <div class="input-field">
+            <input type="name" placeholder=" Nama " class="name" />
+          </div>
+          <span class="error name-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Masukan nama dengan benar</p>
+          </span>
+        </div>
+        <div class="field phone-field">
+          <div class="input-field">
+            <input type="phone" placeholder="+62 -XXX-XXXX" class="phone" />
+          </div>
+          <span class="error phone-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Masukan nomer telphone dengan benar</p>
+          </span>
+        </div>
+        <div class="field email-field">
+          <div class="input-field">
+            <input type="email" placeholder="Example@gmail.com" class="email" />
+          </div>
+          <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Masukan email dengan benar</p>
+          </span>
+        </div>
+        <div class="field create-password">
+          <div class="input-field">
+            <input
+              type="password"
+              placeholder="Create Password"
+              class="password"
+            />
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+          <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">
+                Silakan masukkan minimal 8 karakter dengan angka, simbol, huruf kecil dan kapital.
+            </p>
+          </span>
+        </div>
+        <div class="field confirm-password">
+          <div class="input-field">
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              class="cPassword"
+            />
+            <i class="bx bx-hide show-hide"></i>
+          </div>
+          <span class="error cPassword-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Password tidak sama</p>
+          </span>
+        </div>
+        <div class="dialog">
+          <div class="remember">
+            <div class="always-visible">
+              <input type="checkbox" onchange="setVisible()" /> Ingat Saya
+            </div>
+          </div>
+        </div>
+        <div class="input-field button">
+          <input type="submit" value="Daftar" />
+        </div>
+      </form>
+      <h4>
+        Kamu sudah punya akun ?
+        <a href="lg.htm">Masuk</a>
+      </h4>
+    </div>
+    <script async src="rg.js"></script>
+  </body>
+</html>
